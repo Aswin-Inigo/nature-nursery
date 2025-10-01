@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+const basename = import.meta.env.PROD ? "/nature-nursery" : "/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
